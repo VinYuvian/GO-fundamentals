@@ -17,17 +17,17 @@ Arrays :
 - copies of array doesn't reference to the underlying data of the array
  instead the copies are literal copies
 a:=[3]int{1,2,3}
-b:=1
+b:=a
 b[1]=5
 fmt.Println(a) //{1,2,3}
-fmt.Println(b) //{1,2,3}
+fmt.Println(b) //{1,5,3}
  but
 a:=[3]int{1,2,3}
 b:=&a
 b[1]=5
 fmt.Println(a) {1,5,3}
 fmt.Println(b) {1,5,3}
-- In order to reference the exact data we need to use addr operator &
+- In order to reference the underlying data we need to use addr operator &
 
 - Built-in Functions
  - len(array)

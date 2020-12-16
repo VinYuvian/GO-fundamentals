@@ -31,7 +31,7 @@ performing some operations like delete
 if the key is available ok will be true...if not it will be false
 and strength will be the value associated with key 7th
 Structs :
-struct is collection type which store data of different type
+struct is a collection type which stores data of different types
 structs are used to store data related to entities
 - creation
 type Student struct{

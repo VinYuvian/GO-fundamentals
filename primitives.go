@@ -52,6 +52,7 @@ import(
 )
 
 func main(){
+	//uint8 is also known as byte
 	var i byte = 128
 	var b float64
 	var str string = "This is a string"
@@ -63,8 +64,10 @@ func main(){
 	d:=complex(2,24)
 	fmt.Printf("%v,%v,%T,%T\n",real(d),imag(d),real(d),imag(d))
 	fmt.Printf("%v,%T\n",str,str)
+	//accessing elements of str and seeing their type
 	fmt.Printf("%v,%T\n",str[0],str[0])
 	fmt.Printf("%v,%T\n",string(str[0]),str)
+	// converting str into slice of bytes
 	fmt.Printf("%v,%T\n",by,by)
 
 
